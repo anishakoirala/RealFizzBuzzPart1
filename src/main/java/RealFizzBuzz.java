@@ -3,9 +3,14 @@ public class RealFizzBuzz
     public RealFizzBuzz(int range)  {
         if (range <= 0) {
             System.out.println("Range to low, please increase range parm to greater than 0");
+            return;
         }
         for (int x = 1;x<=range;x++)
         {
+            if (Integer.toString(x).contains("3"))
+            {
+                System.out.print("lucky ");
+            }
             if (x%15 == 0)
             {
                 System.out.print("fizzbuzz ");
