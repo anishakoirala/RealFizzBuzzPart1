@@ -7,10 +7,6 @@ public class RealFizzBuzz
         }
         for (int x = 1;x<=range;x++)
         {
-            if (Integer.toString(x).contains("3"))
-            {
-                System.out.print("lucky ");
-            }
             if (x%15 == 0)
             {
                 System.out.print("fizzbuzz ");
